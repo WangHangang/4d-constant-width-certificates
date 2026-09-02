@@ -27,8 +27,11 @@ the certified conclusion.
 
 The exact-rational certificate data (`.npz`, tens of MB) that the
 Raised-Meissner verifier consumes are **not** stored in this git history.
-They are archived immutably on Zenodo (DOI to be added once the release is
-minted); see [`raised_meissner/data/README.md`](raised_meissner/data/README.md).
+They are archived immutably on Zenodo:
+[10.5281/zenodo.22245760](https://doi.org/10.5281/zenodo.22245760) (concept
+DOI, always resolves to the latest version); see
+[`raised_meissner/data/README.md`](raised_meissner/data/README.md) for the
+version-specific DOI and per-file SHA-256 hashes.
 
 ## Layout
 

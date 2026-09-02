@@ -9,10 +9,12 @@ are archived immutably on Zenodo rather than committed to this git history
   needed because the reduced audit also verifies that every reduced point's
   numerators match `parent[numerators][source_indices]` exactly.
 
-**Zenodo DOI: to be added once the release is minted.**
+**Zenodo DOI (this version, v1.0): [10.5281/zenodo.22245761](https://doi.org/10.5281/zenodo.22245761)**
+**Concept DOI (always resolves to the latest version): [10.5281/zenodo.22245760](https://doi.org/10.5281/zenodo.22245760)**
 
-Until then, expected SHA-256 hashes (from
-`../certificates/rm_reduced_local_convexity_report.json`):
+Expected SHA-256 hashes (from
+`../certificates/rm_reduced_local_convexity_report.json`; the Zenodo record
+page also shows MD5 checksums for a quick download-integrity check):
 
 ```
 reduced (rm_reduced_certificate_v2.npz):
