@@ -1,0 +1,54 @@
+{
+  "exact_det_sum_S": "36415211368949752100591187",
+  "exact_threshold_ok": true,
+  "exact_volume_approx": 0.22186916613238739,
+  "exact_zero_qhull_tetrahedra": 0,
+  "floating_volume": 0.22186916613239013,
+  "full_point_count": 162143,
+  "history": [
+    {
+      "facets": 661161,
+      "mode": "baseline",
+      "selected": 98654,
+      "volume": 0.2218260352927462
+    },
+    {
+      "added": 1000,
+      "facets": 667917,
+      "mode": "incidence",
+      "seconds": 4.309918500002823,
+      "selected": 99654,
+      "volume": 0.22183735440721064
+    },
+    {
+      "added": 2000,
+      "facets": 681525,
+      "mode": "incidence",
+      "seconds": 4.428567299997667,
+      "selected": 101654,
+      "volume": 0.22185101906112462
+    },
+    {
+      "added": 4000,
+      "facets": 708899,
+      "mode": "incidence",
+      "seconds": 4.631559499990544,
+      "selected": 105654,
+      "volume": 0.22186916613239013
+    }
+  ],
+  "input": "D:\\\u684c\u9762\u642c\u8fd0\\Canada001\\Presentation\\rm_rational_v4_stage4_m16_exact.npz",
+  "input_sha256": "15158ac64ede3f650af85a10f9277c42db30bb09fb704f2d042f8c368fe79a7f",
+  "origin_inside_numerically": true,
+  "output_sha256": "4baaa9e5a9da601992be574ff52fa84200f99d300176e00d36f9f46410468df6",
+  "qhull_facets": 708899,
+  "resume": "D:\\\u684c\u9762\u642c\u8fd0\\Canada001\\Presentation\\rm_reduced_certificate.npz",
+  "safety": 2e-06,
+  "selected_fraction": 0.651609998581499,
+  "selected_point_count": 105654,
+  "started": "2026-08-11 19:09:44",
+  "target_den": 20000,
+  "target_float": 0.22185,
+  "target_num": 4437,
+  "total_seconds": 25.864809899998363
+}

@@ -1,0 +1,6 @@
+# raised_meissner/src/rm_reduced_exact_local_convexity_audit.py
+numpy
+scipy
+
+# u4/src/*.py
+python-flint>=0.8

@@ -1,0 +1,23 @@
+{
+  "boundary_layers": 1,
+  "centered_boxes": 56704,
+  "certificate": "U4 I2_04 rigorous centered first-derivative enclosure",
+  "derivative_fallbacks": 7812,
+  "dps": 60,
+  "elapsed_seconds": 12.712648153305054,
+  "kernel": "u4_validated_interval_arb.py",
+  "kernel_sha256": "a28bd08c9b4b5b6934216b5fde3aa28a87c1c3e00f23893033c82a646f5d4c75",
+  "lower": "0.02013853208333709333621988940203980411757",
+  "midpoint_ball": "[0.02026462080051948281204543330507577582353 +/- 1.40e-42]",
+  "n": 256,
+  "natural_boxes": 8832,
+  "piece": "I2_04_mid_zB_zC_nu_r2",
+  "platform": "Windows-10-10.0.22621-SP0",
+  "proof_kernel": "symmetric-box centered form using interval first derivatives; natural Arb fallback on boundary/singular derivative boxes",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "python_flint": "0.9.0",
+  "script": "u4_i2_04_centered_arb.py",
+  "script_sha256": "6e098be65efaa67746e0093887ccd49d4f013345c67f2309b56ec3e497906b2b",
+  "upper": "0.02039070951770187228787097720811174752950",
+  "width": "0.0002521774343647789516510878060719434119299"
+}

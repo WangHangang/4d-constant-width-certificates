@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below, and cite the accompanying paper."
+title: "4D Constant-Width Certificates"
+type: software
+authors:
+  - family-names: "Wang"
+    given-names: "Hangang"
+repository-code: "https://github.com/WangHangang/4d-constant-width-certificates"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Search for Small Four-Dimensional Bodies of Constant Width"
+  authors:
+    - family-names: "[YOUR LAST NAME HERE]"
+      given-names: "[YOUR FIRST NAME HERE]"

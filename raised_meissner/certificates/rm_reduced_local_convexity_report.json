@@ -1,0 +1,32 @@
+{
+  "algebraic_volume_float": 0.22186916613238739,
+  "denominator": 1048576,
+  "edges": 814553,
+  "elapsed_seconds": 54.26181169999472,
+  "exact_det_sum_S": "36415211368949752100591187",
+  "exact_threshold_pass": true,
+  "facets": 708899,
+  "origin_barycentric_weights": [
+    "18614973476213724660345/100534334684449482440548",
+    "7322361376836831725623/50267167342224741220274",
+    "2437563765272989145739/100534334684449482440548",
+    "19496861013644762656143/100534334684449482440548",
+    "45340213675644342527075/100534334684449482440548"
+  ],
+  "origin_simplex_local_indices": [
+    33590,
+    34154,
+    35570,
+    61734,
+    85053
+  ],
+  "parent": "D:\\\u684c\u9762\u642c\u8fd0\\Canada001\\Presentation\\rm_rational_v4_stage4_m16_exact.npz",
+  "parent_sha256": "15158ac64ede3f650af85a10f9277c42db30bb09fb704f2d042f8c368fe79a7f",
+  "planar_edge_stars": 0,
+  "points": 105654,
+  "reduced": "D:\\\u684c\u9762\u642c\u8fd0\\Canada001\\Presentation\\rm_reduced_certificate_v2.npz",
+  "reduced_sha256": "4baaa9e5a9da601992be574ff52fa84200f99d300176e00d36f9f46410468df6",
+  "target_den": 20000,
+  "target_num": 4437,
+  "theorem_basis": "Rybnikov 2007, Theorem 8 (bounded n=4) and Lemma 10 edge-link cone test"
+}
