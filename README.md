@@ -9,19 +9,23 @@ Most of the work was completed during a Mitacs internship. The author thanks
 Mitacs for support and Andriy Prymak for supervision and guidance in research
 and learning methods. Both manuscripts remain drafts for mathematical review.
 
-## October 2026 manuscript supplements
+## Computational supplements
 
-- [`manuscript1/`](manuscript1/): the five-volume-class comparison and AMO
-  comparison, frozen verifier sources, compact raised-body NPZ inputs,
-  historical evidence, and the explicit theorem-to-file index.
-- [`manuscript2/lower_bound_checks/`](manuscript2/lower_bound_checks/): the
-  portable scalar checks for the independent spectral bound and the
-  literature-dependent projection bound. This does not check the analytic
-  descent proof or certify an optimized numerical candidate.
-- [`docs/manuscript_supplements.md`](docs/manuscript_supplements.md): scope,
-  reference to each paper, commands, and current limitations.
+- **Volume computation and comparison** — [`manuscript1/`](manuscript1/):
+  verification code, compact input data, and recorded results for the volume
+  comparisons. [`CERTIFICATES.md`](manuscript1/CERTIFICATES.md) identifies
+  which files support each claim.
+- **Symmetric U4 descent and lower bounds** —
+  [`manuscript2/lower_bound_checks/`](manuscript2/lower_bound_checks/):
+  scripts checking the numerical constants in the lower bounds. These
+  scripts do not verify the analytic descent proof or the feasibility of
+  optimized candidate bodies.
+- **Reproduction guide** — [`docs/manuscript_supplements.md`](docs/manuscript_supplements.md):
+  dependencies, commands, and the scope of the available checks.
 
-Quick commands from the repository root:
+## Quick start
+
+Run these commands from the repository root:
 
 ```text
 python manuscript1/reproduce.py quick
@@ -81,9 +85,17 @@ Each subdirectory's `README.md` gives the exact command used to regenerate
 its certificate from the corresponding `src/` script and (for Raised
 Meissner) the Zenodo-archived input data.
 
-## Status
+## Citation and versions
 
-This is a working reproducibility archive accompanying an in-progress paper.
-Contents will be extended as further certificates are added; existing files
-are not renamed or silently replaced — superseded files are removed rather
-than kept alongside newer versions, to avoid ambiguous citations.
+Please cite the relevant manuscript and identify the repository commit or
+release used for the computation. Citation metadata is provided in
+[`CITATION.cff`](CITATION.cff).
+
+The current manuscript drafts cite
+[commit `7700161bcf3d`](https://github.com/WangHangang/4d-constant-width-certificates/tree/7700161bcf3db3eb6fa8bdc164566b90263c58ae).
+Later documentation edits do not change that fixed snapshot. The Zenodo
+archive linked above covers the original large raised-Meissner datasets;
+it is not an archive of the entire repository.
+
+Both manuscripts remain under review. Updates to code, certificate data,
+and documentation are recorded in the Git history.
