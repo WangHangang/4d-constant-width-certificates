@@ -1,0 +1,38 @@
+{
+  "positive": {
+    "certified_lower": "0.169609721252245111700052149217",
+    "floating_same_mesh": "0.16960972129368551",
+    "cap_lower": "0.0682978894516671347636460609465",
+    "equatorial_lower": "0.101311831800577976936406088271",
+    "vertex_count": 800442,
+    "simplex_count": 4608000,
+    "zero_sign_determinants": 0,
+    "interval_arc_boxes": 0,
+    "terminal_arc_boxes": 0,
+    "worst_positive_slack_lower": "1.3895065904545587e-06",
+    "elapsed_seconds": 38.74154043197632
+  },
+  "negative_inner": {
+    "certified_lower": "0.0530187836710533854853166779719",
+    "floating_same_mesh": "0.053018783683432283",
+    "cap_lower": "0.00272479422548483739968672168175",
+    "equatorial_lower": "0.0502939894455685480856299562902",
+    "vertex_count": 800442,
+    "simplex_count": 4608000,
+    "zero_sign_determinants": 0,
+    "interval_arc_boxes": 0,
+    "terminal_arc_boxes": 0,
+    "worst_positive_slack_lower": null,
+    "elapsed_seconds": 33.72578406333923
+  },
+  "statement": "The reported total is a strict computer-assisted lower bound for Vol_4(canonical raised U3).",
+  "proof_type": "explicit simplicial fan + interval point membership + interval determinants",
+  "mesh_n": 80,
+  "positive_shrink_binary64": "0.99997999999999998",
+  "interval_dps": 50,
+  "terminal_depth": 40,
+  "candidate_boundary_iterations": 24,
+  "candidate_root_iterations": 24,
+  "total_certified_lower": "0.2226285049232984971853688271892224292969",
+  "script_sha256": "a88e263952c8914a812dcd4ca4c2c8852828d66239c3a8e77bbe69d70ef668d0"
+}

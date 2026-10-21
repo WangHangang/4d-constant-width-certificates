@@ -1,8 +1,40 @@
 # 4D Constant-Width Certificates
 
-Source code and certificate metadata for computer-assisted results concerning
-four-dimensional bodies of constant width, supporting the paper *"Search for
-Small Four-Dimensional Bodies of Constant Width."*
+Source code, data and certificate records for two manuscripts by Hangang Wang:
+
+1. *Volume Computation and Comparison for Four-Dimensional Bodies of Constant Width*.
+2. *Symmetric Volume Descent from U4 and a Four-Dimensional Lower Bound*.
+
+Most of the work was completed during a Mitacs internship. The author thanks
+Mitacs for support and Andriy Prymak for supervision and guidance in research
+and learning methods. Both manuscripts remain drafts for mathematical review.
+
+## October 2026 manuscript supplements
+
+- [`manuscript1/`](manuscript1/): the five-volume-class comparison and AMO
+  comparison, frozen verifier sources, compact raised-body NPZ inputs,
+  historical evidence, and the explicit theorem-to-file index.
+- [`manuscript2/lower_bound_checks/`](manuscript2/lower_bound_checks/): the
+  portable scalar checks for the independent spectral bound and the
+  literature-dependent projection bound. This does not check the analytic
+  descent proof or certify an optimized numerical candidate.
+- [`docs/manuscript_supplements.md`](docs/manuscript_supplements.md): scope,
+  reference to each paper, commands, and current limitations.
+
+Quick commands from the repository root:
+
+```text
+python manuscript1/reproduce.py quick
+python -m pip install -r manuscript2/lower_bound_checks/requirements.txt
+python manuscript2/lower_bound_checks/certify_lower_gap.py
+```
+
+The first command verifies frozen-file identities and stored arithmetic;
+it does not repeat geometric certification. The final U4 six-decimal terminal
+certificate is still unavailable. The existing wider U4 interval suffices for
+the main strict comparisons. See the supplement's `CERTIFICATES.md`.
+
+The original directories below are retained to preserve their existing links.
 
 ## Main certified comparison
 
@@ -25,8 +57,9 @@ the certified conclusion.
 
 ## Large data files
 
-The exact-rational certificate data (`.npz`, tens of MB) that the
-Raised-Meissner verifier consumes are **not** stored in this git history.
+The two large exact-rational `.npz` files consumed by the original
+`raised_meissner/` verifier are **not** stored in this git history. The
+separate compact inputs for `manuscript1/` are included with that supplement.
 They are archived immutably on Zenodo:
 [10.5281/zenodo.22245760](https://doi.org/10.5281/zenodo.22245760) (concept
 DOI, always resolves to the latest version); see

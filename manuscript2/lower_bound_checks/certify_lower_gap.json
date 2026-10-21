@@ -1,0 +1,41 @@
+{
+  "precision_bits": 192,
+  "threshold_a": "9/50",
+  "threshold_b": "27/100",
+  "arc_radius": "1/40",
+  "rational_gradient_bound": "36/5",
+  "degree_three_gradient_squared_bound": "360/7",
+  "tail_trace_coefficient": "5/224",
+  "pointwise_deficit": "19/400",
+  "deficit_coefficient": "475/729",
+  "spectral_multiplier": "729/21280",
+  "surface_area_gap": "[0.000511210054568517694383764961252401250575834038425100924886 +/- 5.44e-61]",
+  "basic_volume_bound": "[0.178137069129469973226342992524187469985829153214739087242 +/- 7.53e-58]",
+  "morning_spectral_bound": "[0.178155471762289335483396233960346840943835837581425384126 +/- 3.65e-58]",
+  "spectral_volume_bound": "[0.178184042236351328567350741147997629048808400075083311431 +/- 7.74e-58]",
+  "spectral_constant_strict_enclosure": [
+    "0.17818404223635132",
+    "0.17818404223635133"
+  ],
+  "projection_volume_bound": "[0.178722039910394625852362418230126186288446408229859734159 +/- 6.17e-58]",
+  "projection_constant_strict_enclosure": [
+    "0.17872203991039462",
+    "0.17872203991039463"
+  ],
+  "displayed_strict_lower_endpoints": {
+    "spectral": "0.17818404",
+    "projection": "0.17872203"
+  },
+  "literature_input": {
+    "author": "Yunjiang Jiang",
+    "theorem": "Theorem 1.1",
+    "url": "https://arxiv.org/html/2610.13964v1",
+    "width_one_3d_constant": "1651/4000",
+    "external_analytic_theorem_not_verified_by_this_script": true
+  },
+  "all_scalar_checks_passed": true,
+  "python_version": "3.12.14",
+  "python_flint_version": "0.9.0",
+  "script_sha256": "0a714d712998d54fe9d42f75aee6aa9ff0d4f1296c6b032adca7575dd9254a43",
+  "scope": "Exact rational scalar comparisons and Arb enclosures only. Intervals enclose proved bound constants, not the unknown minimum. No global U4 feasibility or external theorem proof is verified here."
+}

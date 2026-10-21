@@ -1,0 +1,48 @@
+{
+  "S": "36422724480297239765177010",
+  "certificate": "Raised-Meissner exact parent membership certificate",
+  "elapsed_seconds": 17.739582777023315,
+  "input": "D:\\\u684c\u9762\u642c\u8fd0\\Canada001\\Presentation\\rm_rational_v4_stage4_m16_exact.npz",
+  "input_sha256": "15158ac64ede3f650af85a10f9277c42db30bb09fb704f2d042f8c368fe79a7f",
+  "membership_success": true,
+  "min_negative_linear_slack": "13907844234224",
+  "min_negative_squared_slack": "3021656421569168",
+  "min_positive_integer_slack": "4529484",
+  "numpy": "2.4.6",
+  "platform": "Windows-10-10.0.22621-SP0",
+  "proof_scope": "All stored parent points are exactly certified members. The optional determinant sum is exact for the stored one-based simplicial list but is not by itself a combinatorial hull certificate.",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "schema": {
+    "denominator": 1048576,
+    "hull_indexing": "one-based parent indices in [1,N]; row 0 reserved for origin after prepend",
+    "hull_simplices_shape": [
+      991979,
+      4
+    ],
+    "keys": [
+      "directions",
+      "numerators",
+      "denominator",
+      "sides",
+      "residuals",
+      "witness_indices",
+      "witness_denominator",
+      "hull_simplices",
+      "hull_equations",
+      "float_volume"
+    ],
+    "negative_count": 80208,
+    "numerators_dtype": "int64",
+    "numerators_shape": [
+      162143,
+      4
+    ],
+    "positive_count": 81935,
+    "positive_witness_sentinel": -1,
+    "sides_shape": [
+      162143
+    ],
+    "witness_denominator": 64
+  },
+  "script_sha256": "e6fa55cec6ce831cf4dad94682114dbd04df1813305a393a8f8ffb09b4795f8f"
+}

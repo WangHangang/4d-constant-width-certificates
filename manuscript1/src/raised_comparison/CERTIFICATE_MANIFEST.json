@@ -1,0 +1,90 @@
+{
+  "format_version": 2,
+  "revision": "2026-09-29 explanation and manuscript update",
+  "files": {
+    "certify_comparison.py": {
+      "bytes": 58138,
+      "sha256": "b3aadabd3843c497942341daef8101200807b4a6dfef4b5600b4401a6a91796e"
+    },
+    "raised_comparison_compact.npz": {
+      "bytes": 7901375,
+      "sha256": "2efba7805233b60a27bb46a42eff26642dfaddc9cf7914d951af139fec90b1fa"
+    },
+    "rm_lower.npz": {
+      "bytes": 4941661,
+      "sha256": "43997a1ed71f4c3240146112a74b886d1355113c18c14963ee9b9798d3954412"
+    },
+    "README.md": {
+      "bytes": 4673,
+      "sha256": "2228b2062fb8e426f39281251cd70dc0554d48dac254ef887d63fe63fc12b4c9"
+    }
+  },
+  "successful_fresh_replay": {
+    "status": "PASS",
+    "scope": "Independent raised-body lower/upper replay, combined with previously certified U4 upper and Body5 enclosure; M4 exact formula",
+    "comparisons": {
+      "U4_lt_RM": true,
+      "RM_lt_U3": true,
+      "U3_lt_Body5": true,
+      "Body5_lt_M4": true
+    },
+    "rm_lower_certificate": {
+      "body": "RaisedMeissnerFace",
+      "arithmetic": "exact",
+      "volume_expression": "36415211368949752100591187*sqrt(2)/(192*1048576^4)",
+      "exact_det_sum": "36415211368949752100591187",
+      "above_threshold": true,
+      "threshold": "221869166132387/1000000000000000",
+      "points": 105654,
+      "facets": 708899,
+      "edges": 814553,
+      "planar_edge_stars": 0,
+      "elapsed_seconds": 77.44370670011267
+    },
+    "rm_upper_outward": 0.22259517956843491,
+    "u3_upper_outward": 0.22286811684534777,
+    "u3_lower_display": 0.22262825284060683,
+    "rm_u3_gap_display": 3.3073272171911636e-05,
+    "u3_body5_gap_display": 9.529632382241231e-06,
+    "exact_raised_bounds": {
+      "rm_positive_upper": {
+        "numerator": "819604920912911772488905",
+        "denominator": "4835703278458516698824704"
+      },
+      "rm_negative_upper": {
+        "numerator": "256799318695231164007933",
+        "denominator": "4835703278458516698824704"
+      },
+      "rm_upper": {
+        "numerator": "538202119804071468248419",
+        "denominator": "2417851639229258349412352"
+      },
+      "u3_upper": {
+        "numerator": "2155448166585847858684765",
+        "denominator": "9671406556917033397649408"
+      },
+      "u3_lower": {
+        "numerator": "1301486224170660445770920809769029537745506875065",
+        "denominator": "5846006549323611672814739330865132078623730171904"
+      }
+    },
+    "checker_sha256": "b3aadabd3843c497942341daef8101200807b4a6dfef4b5600b4401a6a91796e",
+    "data_sha256": "2efba7805233b60a27bb46a42eff26642dfaddc9cf7914d951af139fec90b1fa",
+    "elapsed_seconds": 536.5796513999812
+  },
+  "proof_note": {
+    "file": "Raised_full_comparison_20260929_v2.pdf",
+    "pages": 6,
+    "sha256": "25702fae0a8d2aa364e0c279233928e78fb0589d8e9e3a3a3421bfc4b9ced694"
+  },
+  "manuscript": {
+    "file": "Showing_that_U4_is_smallest20260921_k5_update.tex",
+    "sha256": "b7afca0ec6c0fb6c7d32aac1ada49cc1c88957a4afb6e27e2d721096bf51e275"
+  },
+  "external_inputs": {
+    "U4_upper": ".221838300",
+    "Body5_lower": ".222877646477730",
+    "Body5_upper": ".222991176426990"
+  },
+  "change_scope": "Only the checker docstring changed from repaired full-comparison revision; executable AST and both data files verified identical."
+}

@@ -1,0 +1,54 @@
+{
+  "certificate": "Body 5 independent validated volume enclosure",
+  "python": "3.13.5",
+  "arithmetic_contract": {
+    "basic_binary64": "round-to-nearest binary64; each +,-,*,/ endpoint operation immediately expanded by one math.nextafter toward the appropriate infinity",
+    "sqrt": "math.sqrt used only as initial guess; output endpoints verified by exact Fraction squaring and adjusted outward if necessary",
+    "atan_pi": "explicit alternating Taylor enclosures; pi via Machin formula with exact-rational alternating-series enclosure",
+    "probabilistic_input": false,
+    "mpmath_interval_used": false,
+    "preflight": "sys.float_info radix=2, mant_dig=53, rounds=1 (round-to-nearest)"
+  },
+  "parameters": {
+    "face_grid": "64x64",
+    "apex_arc_grid": 1024,
+    "base_arc_grid": 1024,
+    "base_vertex_grid": "128x128",
+    "base_vertex_workers": 8,
+    "apex_moment_truncation": 20
+  },
+  "components": {
+    "face": {
+      "lower": "0.0021603167708228134",
+      "upper": "0.0021608078054053933"
+    },
+    "apex_arc": {
+      "lower": "0.01619767027932573",
+      "upper": "0.016197721020872153"
+    },
+    "base_arc": {
+      "lower": "0.0038454349589358938",
+      "upper": "0.0038454399433777587"
+    },
+    "base_vertex": {
+      "lower": "0.20194738235753978",
+      "upper": "0.20206011753630077"
+    },
+    "apex_E": {
+      "lower": "-0.017104135015065691",
+      "upper": "-0.017104135013461415"
+    }
+  },
+  "volume": {
+    "lower": "0.222877646477737",
+    "upper": "0.22299117642698246"
+  },
+  "raised_U3_validated_upper": "0.222868116845342",
+  "strict_gap_lower_minus_raised_U3_upper": "9.52963239500144e-06",
+  "strict_gap_exact_fraction": "2619485406683733754527/274877906944000000000000000",
+  "script_sha256": "644097e6488a8e8200c1d7b77aa36611e9382400cca56d67bab2775e98ef26e9",
+  "success": true,
+  "terminal_token": "BODY5_VALIDATED_LOWER_CERTIFICATE_SUCCESS",
+  "record_note": "Values transcribed from the successful production run of the script whose SHA-256 is recorded here.",
+  "terminal_log_sha256": "9e3266d9dbdb34f95550709e1942f25e9b5cd00c02097695362ce2e5772fc267"
+}

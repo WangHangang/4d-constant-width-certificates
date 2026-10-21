@@ -1,0 +1,8 @@
+# The core bl4 fixed-fan generator/verifier has no third-party dependencies.
+# Selected programs under reference_methods use:
+numpy
+scipy
+numba
+mpmath
+python-flint
+

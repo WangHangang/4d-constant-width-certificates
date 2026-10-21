@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "scope": "Frozen-file identities and stored exact arithmetic; no geometric or integration replay",
+  "frozen_files_checked": 25,
+  "u4_grid_exact_total_encloses_piece_sum": true,
+  "rm_lower_decimal_diagnostic": "0.2218691661323873732500324250216624400523529482449690129695661496015227",
+  "raised_comparisons_exact": true,
+  "body5_current_endpoint_separation": true,
+  "pending_artifacts": [
+    {
+      "name": "u4_6dp_adaptive_certificate.json",
+      "sha256_recorded": "b787db8a5fadc05b895e8c2b57567fd19139fb4982cbacb19f4f17a0c426f1b7",
+      "status": "Final terminal record not recovered; source and earlier U4-G/5dp certificates available"
+    }
+  ]
+}

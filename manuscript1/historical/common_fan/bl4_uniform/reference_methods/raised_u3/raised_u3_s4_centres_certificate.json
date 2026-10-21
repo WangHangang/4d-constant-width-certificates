@@ -1,0 +1,20 @@
+{
+  "statement": "Every stored centre belongs to the true positive half K_+ of the canonical raised U3.",
+  "proof_type": "computer-assisted interval proof",
+  "seed_file": "raised_u3_s4_active_centers.npz",
+  "seed_file_sha256": "3de76baae87e3280cf55b0d4905c35306a396460a26e4dbae1d6cedb027672a8",
+  "script_sha256": "d7eb68595b600fcd4eedcc4b0dc185de180ee7e2765d1af0f26fbc861cf1da18",
+  "output_centers_file": "raised_u3_s4_certified_centers.npz",
+  "output_centers_sha256": "631c7cb795777b4f685bc317fdd3bcd7d10fdf908b6c4b8a80089e016d620181",
+  "seed_count": 435,
+  "orbit_center_count": 10141,
+  "inward_scale_binary64": "0.99999998999999995",
+  "interval_dps": 60,
+  "terminal_depth": 48,
+  "arc_checks": 2610,
+  "total_interval_boxes_visited": 363548,
+  "total_terminal_ambiguous_boxes": 3779,
+  "worst_seed_index": 256,
+  "worst_certified_slack_lower": "0.000000009990518647841156022877467700688459879471",
+  "symmetry_generation": "exact coordinate permutations and sign changes with product of signs +1"
+}

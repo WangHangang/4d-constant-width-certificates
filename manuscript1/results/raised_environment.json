@@ -1,0 +1,19 @@
+{
+  "mode": "raised",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.22621-SP0",
+  "packages": {
+    "numpy": "2.5.4",
+    "numba": "0.68.0",
+    "llvmlite": "0.50.0",
+    "mpmath": "1.4.1"
+  },
+  "command": [
+    "C:\\Users\\William\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-u",
+    "D:\\Desktop_Archive\\Canada001\\Andriy Prymak\\20261004\\Manuscripts_20261015\\constant-width-volume-comparison\\src\\raised_comparison\\certify_comparison.py",
+    "--out",
+    "D:\\Desktop_Archive\\Canada001\\Andriy Prymak\\20261004\\Manuscripts_20261015\\constant-width-volume-comparison\\runs\\20261016T001943Z_raised_00ae9806\\verification_result.json"
+  ],
+  "fresh_output_directory": "D:\\Desktop_Archive\\Canada001\\Andriy Prymak\\20261004\\Manuscripts_20261015\\constant-width-volume-comparison\\runs\\20261016T001943Z_raised_00ae9806"
+}
