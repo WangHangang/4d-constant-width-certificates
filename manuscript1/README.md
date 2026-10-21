@@ -14,7 +14,7 @@ historical records. Their full logs are included under results/.
 
 ## Start here
 
-The quick check needs only the Python standard library (tested with Python 3.12 and 3.14):
+The quick check needs only the Python standard library (locally tested with Python 3.12):
 
     python reproduce.py quick
 
