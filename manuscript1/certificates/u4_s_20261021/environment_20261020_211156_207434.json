@@ -1,0 +1,24 @@
+{
+  "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "python_flint": "0.9.0",
+  "command": [
+    "C:\\Users\\Administrator\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "-u",
+    "C:\\Users\\Administrator\\Downloads\\code\\U4_Six_Decimal_Certificate_Reproduction\\src\\u4_certify_6dp_adaptive.py",
+    "--base-n",
+    "4096",
+    "--refine",
+    "4",
+    "--dps",
+    "50",
+    "--checkpoint-every-rows",
+    "8",
+    "--report-every-rows",
+    "32",
+    "--outdir",
+    "C:\\Users\\Administrator\\Downloads\\code\\U4_Six_Decimal_Certificate_Reproduction\\runs\\u4_r4"
+  ],
+  "driver_sha256": "31b6bb3053de1874c6144d835453ecd017902098878cb02f4245acd1544c9b16",
+  "package_manifest_sha256": "776c19268682407206241618815bd71166c4fa17061e2a64ac52cd6b3fcf7023"
+}

@@ -6,7 +6,7 @@ Hashes are in manifest.json; they establish file identity, not correctness.
 | ID | Claim | Files and verification route |
 |---|---|---|
 | U4-G | 0.2218338853720453 < V(U4) < 0.2218382994641744 | src/u4/u4_human_checkable_checkpoint_arb.py and its two kernels; certificates/u4_grid/ contains the 60-digit exact records. |
-| U4-S | Sharper six-decimal enclosure reported in the paper | src/u4/u4_certify_6dp_adaptive.py plus frozen dependencies; the final terminal JSON is pending recovery. Do not substitute the five-decimal record. |
+| U4-S | 0.2218357659033942 < V(U4) < 0.2218363538061581; correctly rounded to 0.221836 | certificates/u4_s_20261021/: new full production certificate, completed checkpoint, log and environment; python reproduce.py quick audits records and python reproduce.py u4-resume recomputes the 1D pieces and aggregation. See docs/U4_S_RETURN_AUDIT.md for scope. |
 | RM-L | Exact inner-polytope lower bound for raised Meissner | src/raised_comparison/certify_comparison.py and rm_lower.npz. Complete membership, topology, all 814,553 edge checks, and determinant sum are recomputed. |
 | R-C | Both raised-body upper bounds and final n=80 raised-U3 lower bound | src/raised_comparison/certify_comparison.py and raised_comparison_compact.npz, together with rm_lower.npz. Use python reproduce.py raised. |
 | B5 | Boundary-flux interval enclosing Body5 | src/body5/body5_independent_validated_certificate.py; use python reproduce.py body5. |
@@ -38,18 +38,25 @@ Use a new output directory for a fresh replay. The original grid checkpoint
 is kept under certificates/ and is never silently passed as a new run.
 The ten pieces consist of three I1 pieces, five I2 pieces, and two I3 pieces.
 
-## Recovering or recomputing U4-S
+## U4-S production certificate and replay
 
-Missing filename: u4_6dp_adaptive_certificate.json
-Recorded SHA-256:
-b787db8a5fadc05b895e8c2b57567fd19139fb4982cbacb19f4f17a0c426f1b7
+The new production record returned on 21 October 2026 is available in
+`certificates/u4_s_20261021/`. The interval implies six-decimal rounding
+to 0.221836; seven decimal places are not certified.
 
-The source first checks three frozen dependency hashes. A new computation
-could produce a different JSON hash because it records run metadata;
-it must be identified as a new certificate, not a recovered historical file.
-The driver checks correct rounding and emits a success token only if the
-validated enclosure is sufficiently narrow. A recomputation has not been
-performed in this packaging pass.
+Current certificate SHA-256:
+`a5b0a863c50de0a262e6596df7098b93e6955a3232f4aa4c743b0b3c0896bd5f`.
+Completed checkpoint SHA-256:
+`5ccfe5a3c878044d703707aa74464630adb07dcf9ad5ce4e5410b807b2324ebb`.
+
+The historical JSON with recorded SHA-256
+`b787db8a5fadc05b895e8c2b57567fd19139fb4982cbacb19f4f17a0c426f1b7`
+has not been recovered. It is not the identity of the newly supplied file.
+The new run closes the missing-record gap for this numerical claim.
+
+See [the return audit](docs/U4_S_RETURN_AUDIT.md) for original file identities,
+exact imported-endpoint checks, commands, and the distinction between the
+full production run and the limited local checkpoint replay.
 
 ## Common-fan replay
 

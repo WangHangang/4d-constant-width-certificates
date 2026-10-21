@@ -14,7 +14,7 @@ historical records. Their full logs are included under results/.
 
 ## Start here
 
-Use Python 3.12. The quick check needs only the standard library:
+The quick check needs only the Python standard library (tested with Python 3.12 and 3.14):
 
     python reproduce.py quick
 
@@ -38,8 +38,22 @@ Each run writes to a new runs/ directory, so old success records are not reused.
 
 The uniform-grid U4 source and its original exact endpoint records are included.
 The full grid run is expensive (the archived run took about 14 hours).
-The sharper six-decimal source is included, but its final terminal JSON has
-not been recovered. Earlier five-decimal results are not a substitute.
+The sharper six-decimal production certificate and completed checkpoint
+returned on 21 October 2026 are included under `certificates/u4_s_20261021/`.
+The production log records a full run of about 83 minutes. The current `quick`
+command audits exact aggregation, imported endpoints, completion counters,
+file identities and six-decimal rounding to 0.221836.
+
+A local completed-checkpoint replay also passed. To repeat that limited check:
+
+    python -m pip install -r requirements-u4.txt
+    python reproduce.py u4-resume
+
+This recomputes the six 1D integrals and the final sum, using a copy of the
+completed adaptive 2D checkpoint. It does not rerun the adaptive 2D grid.
+For a fresh adaptive run and the precise scope, see
+`docs/U4_S_RETURN_AUDIT.md`. The new record has a different hash from the
+unrecovered historical JSON; both identities are documented.
 
 The original common-fan code archive, extracted source, level-5 records,
 and AMO verification log are included as historical evidence. The quick
@@ -56,7 +70,7 @@ Instructions and scope are in CERTIFICATES.md.
 - results/: fresh audit output, with execution scope stated in each record.
 - historical/: older records and the common-fan source archive.
 - docs/: mathematical kernel notes, review scope, and publication plan.
-- manifest.json: frozen-file hashes and the remaining missing artifact.
+- manifest.json: frozen-file hashes, current verification status and historical provenance.
 
 ## Attribution and checking
 

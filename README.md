@@ -34,9 +34,11 @@ python manuscript2/lower_bound_checks/certify_lower_gap.py
 ```
 
 The first command verifies frozen-file identities and stored arithmetic;
-it does not repeat geometric certification. The final U4 six-decimal terminal
-certificate is still unavailable. The existing wider U4 interval suffices for
-the main strict comparisons. See the supplement's `CERTIFICATES.md`.
+it does not repeat geometric certification. The U4 six-decimal certificate,
+completed checkpoint and production log are now included. They certify
+rounding to **0.221836**; the wider U4 interval also suffices for the main
+strict comparisons. See the [U4-S audit](manuscript1/docs/U4_S_RETURN_AUDIT.md)
+for the distinction between the full production run and local checkpoint replay.
 
 The original directories below are retained to preserve their existing links.
 
@@ -91,10 +93,11 @@ Please cite the relevant manuscript and identify the repository commit or
 release used for the computation. Citation metadata is provided in
 [`CITATION.cff`](CITATION.cff).
 
-The current manuscript drafts cite
+The earlier manuscript snapshot is
 [commit `7700161bcf3d`](https://github.com/WangHangang/4d-constant-width-certificates/tree/7700161bcf3db3eb6fa8bdc164566b90263c58ae).
-Later documentation edits do not change that fixed snapshot. The Zenodo
-archive linked above covers the original large raised-Meissner datasets;
+The subsequent U4-S supplement adds the new production certificate returned
+on 21 October 2026. Cite the fixed revision specified in the paper or used
+for your checks. The Zenodo archive linked above covers the original large raised-Meissner datasets;
 it is not an archive of the entire repository.
 
 Both manuscripts remain under review. Updates to code, certificate data,

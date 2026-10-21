@@ -1,0 +1,38 @@
+{
+  "complete": true,
+  "counts": {
+    "base_centered": 16270750,
+    "base_derivative_fallbacks": 490086,
+    "base_refined": 506466,
+    "refined_centered": 4131919,
+    "refined_derivative_fallbacks": 3906005,
+    "refined_natural": 3971537
+  },
+  "lower_exact": [
+    "60646237995064934951703094735128919930158553288117",
+    -171
+  ],
+  "meta": {
+    "base_n": 4096,
+    "boundary_layers_refined": 1,
+    "dps": 50,
+    "indexing": "0-based; next_row is the first unfinished base row in [0, base_n]",
+    "piece": "I2_04_mid_zB_zC_nu_r2",
+    "refine": 4,
+    "script_sha256": "31b6bb3053de1874c6144d835453ecd017902098878cb02f4245acd1544c9b16",
+    "sentinels": "no sentinel values; all counters are explicit nonnegative integers",
+    "source_sha256": {
+      "u4_certify_5dp_semianalytic.py": "c6c7e969c696b69f643e797c953baefb4180b3185bda5ce54b4d19efe3043063",
+      "u4_i2_04_centered_arb.py": "6e098be65efaa67746e0093887ccd49d4f013345c67f2309b56ec3e497906b2b",
+      "u4_validated_interval_arb.py": "a28bd08c9b4b5b6934216b5fde3aa28a87c1c3e00f23893033c82a646f5d4c75"
+    }
+  },
+  "next_row": 4096,
+  "schema_version": 1,
+  "started_unix": 1792548716.3892157,
+  "updated_unix": 1792553687.3682528,
+  "upper_exact": [
+    "7580971009211008120681986392088005996769286789713",
+    -168
+  ]
+}

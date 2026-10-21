@@ -1,0 +1,11 @@
+2026-09-09T15:23:14-0500 COMMAND 'C:\Users\Administrator\AppData\Local\Python\pythoncore-3.14-64\python.exe' verify_certificate.py 'C:\Users\Administrator\Downloads\code\certificates\AMO_k5.json'
+{
+  "status": "PASS",
+  "body": "AMO",
+  "oracle": "Direct width-one AMO peabody in the regular-4-simplex coefficient chart. Nonzero endpoints use explicit boundary parameter-box enclosures and the exact inward-shrink witness; no global membership predicate is assumed.",
+  "rays": 87552,
+  "cells": 524288,
+  "lower_bound": "0.222097827053789",
+  "above_threshold": true
+}
+2026-09-09T15:29:09-0500 EXIT 0 elapsed=0.099h

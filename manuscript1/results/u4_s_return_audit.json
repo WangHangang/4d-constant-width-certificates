@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "scope": "Returned file/source identities, exact completed-checkpoint coverage counters, imported U4-G endpoint provenance, rational ten-piece aggregation and six-decimal rounding. No fresh 2D integration in this audit.",
+  "certificate_sha256": "a5b0a863c50de0a262e6596df7098b93e6955a3232f4aa4c743b0b3c0896bd5f",
+  "returned_files_checked": 4,
+  "source_files_checked": 4,
+  "base_cells": 16777216,
+  "refined_base_cells": 506466,
+  "refined_subcells": 8103456,
+  "paper_enclosure": [
+    "0.2218357659033942",
+    "0.2218363538061581"
+  ],
+  "correctly_rounded_6dp": "0.221836",
+  "seven_decimal_rounding_certified": false,
+  "production_elapsed_seconds": 4971.08246421814,
+  "historical_record_status": "New production run; original b787db8a5fad... JSON remains unrecovered."
+}

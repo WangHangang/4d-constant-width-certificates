@@ -1,0 +1,167 @@
+[preflight] all schemas, dyadic formats, 0-based arc/centre indices, sentinels and ranges PASS
+[RM preflight] hash, shapes, integer types, zero-based indices and sentinels PASS
+[RM membership] 25000/105654; elapsed=1.0s; ETA=3.2s
+[RM membership] 50000/105654; elapsed=1.9s; ETA=2.2s
+[RM membership] 75000/105654; elapsed=2.9s; ETA=1.2s
+[RM membership] 100000/105654; elapsed=3.8s; ETA=0.2s
+[RM membership] 105654/105654; elapsed=4.0s; ETA=0.0s
+[topology] tetrahedra are unique
+[topology] unique triangles=1,417,798; every triangle occurs exactly twice
+[topology] dual unions 500,000/1,417,798; elapsed=1.3s
+[topology] dual unions 1,000,000/1,417,798; elapsed=2.9s
+[topology] facet-dual graph connected
+[topology] vertex links 25,000/105,654; elapsed=1.4s; ETA=4.5s
+[topology] vertex links 50,000/105,654; elapsed=2.9s; ETA=3.2s
+[topology] vertex links 75,000/105,654; elapsed=4.5s; ETA=1.9s
+[topology] vertex links 100,000/105,654; elapsed=6.1s; ETA=0.3s
+[topology] vertex links 105,654/105,654; elapsed=6.4s; ETA=0.0s
+[topology] every vertex link is connected with Euler characteristic 2
+[topology/local] unique edges=814,553; edge-tetrahedron incidences=4,253,394
+[local] edges 50,000/814,553; generic=50,000; planar=0; elapsed=4.1s; ETA=1m 3s
+[local] edges 100,000/814,553; generic=100,000; planar=0; elapsed=7.9s; ETA=56.8s
+[local] edges 150,000/814,553; generic=150,000; planar=0; elapsed=11.8s; ETA=52.2s
+[local] edges 200,000/814,553; generic=200,000; planar=0; elapsed=16.0s; ETA=49.0s
+[local] edges 250,000/814,553; generic=250,000; planar=0; elapsed=19.9s; ETA=44.9s
+[local] edges 300,000/814,553; generic=300,000; planar=0; elapsed=23.3s; ETA=40.0s
+[local] edges 350,000/814,553; generic=350,000; planar=0; elapsed=27.1s; ETA=35.9s
+[local] edges 400,000/814,553; generic=400,000; planar=0; elapsed=30.8s; ETA=31.9s
+[local] edges 450,000/814,553; generic=450,000; planar=0; elapsed=34.4s; ETA=27.9s
+[local] edges 500,000/814,553; generic=500,000; planar=0; elapsed=37.7s; ETA=23.7s
+[local] edges 550,000/814,553; generic=550,000; planar=0; elapsed=41.6s; ETA=20.0s
+[local] edges 600,000/814,553; generic=600,000; planar=0; elapsed=45.2s; ETA=16.2s
+[local] edges 650,000/814,553; generic=650,000; planar=0; elapsed=48.3s; ETA=12.2s
+[local] edges 700,000/814,553; generic=700,000; planar=0; elapsed=52.3s; ETA=8.6s
+[local] edges 750,000/814,553; generic=750,000; planar=0; elapsed=55.7s; ETA=4.8s
+[local] edges 800,000/814,553; generic=800,000; planar=0; elapsed=59.8s; ETA=1.1s
+[local] edges 814,553/814,553; generic=814,553; planar=0; elapsed=1m 1s; ETA=0.0s
+[local] every edge star passed exact local-convexity test; planar edge stars=0
+[volume] 100,000/708,899; zero-cones=0; elapsed=0.6s; ETA=4.0s
+[volume] 200,000/708,899; zero-cones=0; elapsed=1.2s; ETA=3.1s
+[volume] 300,000/708,899; zero-cones=0; elapsed=1.8s; ETA=2.5s
+[volume] 400,000/708,899; zero-cones=0; elapsed=2.4s; ETA=1.8s
+[volume] 500,000/708,899; zero-cones=0; elapsed=3.0s; ETA=1.2s
+[volume] 600,000/708,899; zero-cones=0; elapsed=3.6s; ETA=0.6s
+[volume] 700,000/708,899; zero-cones=0; elapsed=4.1s; ETA=0.1s
+[volume] 708,899/708,899; zero-cones=0; elapsed=4.1s; ETA=0.0s
+PASS RaisedMeissnerFace: exact lower > 221869166132387/1000000000000000
+[exact coverage] all 4 representatives and 1024 roots covered once; max depth=11: PASS
+[RM pos] 65536/716800; elapsed=14.2s; ETA=140.8s
+[RM pos] 131072/716800; elapsed=18.0s; ETA=80.3s
+[RM pos] 196608/716800; elapsed=21.8s; ETA=57.7s
+[RM pos] 262144/716800; elapsed=25.6s; ETA=44.5s
+[RM pos] 327680/716800; elapsed=29.5s; ETA=35.0s
+[RM pos] 393216/716800; elapsed=33.4s; ETA=27.5s
+[RM pos] 458752/716800; elapsed=37.4s; ETA=21.0s
+[RM pos] 524288/716800; elapsed=41.2s; ETA=15.1s
+[RM pos] 589824/716800; elapsed=45.0s; ETA=9.7s
+[RM pos] 655360/716800; elapsed=48.8s; ETA=4.6s
+[RM pos] 716800/716800; elapsed=52.3s; ETA=0.0s
+[exact coverage] all 4 representatives and 1024 roots covered once; max depth=13: PASS
+[RM neg] 65536/1650688; elapsed=10.5s; ETA=254.3s
+[RM neg] 131072/1650688; elapsed=14.4s; ETA=167.1s
+[RM neg] 196608/1650688; elapsed=18.4s; ETA=135.9s
+[RM neg] 262144/1650688; elapsed=22.4s; ETA=118.9s
+[RM neg] 327680/1650688; elapsed=26.6s; ETA=107.5s
+[RM neg] 393216/1650688; elapsed=30.8s; ETA=98.4s
+[RM neg] 458752/1650688; elapsed=34.8s; ETA=90.4s
+[RM neg] 524288/1650688; elapsed=39.0s; ETA=83.7s
+[RM neg] 589824/1650688; elapsed=43.6s; ETA=78.4s
+[RM neg] 655360/1650688; elapsed=47.8s; ETA=72.6s
+[RM neg] 720896/1650688; elapsed=51.9s; ETA=67.0s
+[RM neg] 786432/1650688; elapsed=56.1s; ETA=61.7s
+[RM neg] 851968/1650688; elapsed=60.3s; ETA=56.5s
+[RM neg] 917504/1650688; elapsed=64.4s; ETA=51.5s
+[RM neg] 983040/1650688; elapsed=68.8s; ETA=46.7s
+[RM neg] 1048576/1650688; elapsed=72.9s; ETA=41.8s
+[RM neg] 1114112/1650688; elapsed=77.1s; ETA=37.1s
+[RM neg] 1179648/1650688; elapsed=81.0s; ETA=32.3s
+[RM neg] 1245184/1650688; elapsed=84.8s; ETA=27.6s
+[RM neg] 1310720/1650688; elapsed=88.7s; ETA=23.0s
+[RM neg] 1376256/1650688; elapsed=92.5s; ETA=18.4s
+[RM neg] 1441792/1650688; elapsed=96.5s; ETA=14.0s
+[RM neg] 1507328/1650688; elapsed=100.8s; ETA=9.6s
+[RM neg] 1572864/1650688; elapsed=106.0s; ETA=5.2s
+[RM neg] 1638400/1650688; elapsed=110.1s; ETA=0.8s
+[RM neg] 1650688/1650688; elapsed=110.9s; ETA=0.0s
+[U3 centres] 50/435 PASS
+[U3 centres] 100/435 PASS
+[U3 centres] 150/435 PASS
+[U3 centres] 200/435 PASS
+[U3 centres] 250/435 PASS
+[U3 centres] 300/435 PASS
+[U3 centres] 350/435 PASS
+[U3 centres] 400/435 PASS
+[exact coverage] all 4 representatives and 1024 roots covered once; max depth=8: PASS
+[U3 upper replay] 65536/86016
+[U3 upper replay] 86016/86016
+[U3 lower positive] all 800442 endpoints PASS; min slack=1.52874953e-05
+[U3 exact negative membership] 50000/800442; elapsed=0.7s; ETA=10.9s
+[U3 exact negative membership] 100000/800442; elapsed=1.4s; ETA=10.1s
+[U3 exact negative membership] 150000/800442; elapsed=2.0s; ETA=8.8s
+[U3 exact negative membership] 200000/800442; elapsed=2.7s; ETA=8.2s
+[U3 exact negative membership] 250000/800442; elapsed=3.5s; ETA=7.6s
+[U3 exact negative membership] 300000/800442; elapsed=4.3s; ETA=7.1s
+[U3 exact negative membership] 350000/800442; elapsed=4.9s; ETA=6.3s
+[U3 exact negative membership] 400000/800442; elapsed=5.7s; ETA=5.7s
+[U3 exact negative membership] 450000/800442; elapsed=6.4s; ETA=5.0s
+[U3 exact negative membership] 500000/800442; elapsed=7.1s; ETA=4.3s
+[U3 exact negative membership] 550000/800442; elapsed=7.9s; ETA=3.6s
+[U3 exact negative membership] 600000/800442; elapsed=8.6s; ETA=2.9s
+[U3 exact negative membership] 650000/800442; elapsed=9.3s; ETA=2.2s
+[U3 exact negative membership] 700000/800442; elapsed=10.0s; ETA=1.4s
+[U3 exact negative membership] 750000/800442; elapsed=10.7s; ETA=0.7s
+[U3 exact negative membership] 800000/800442; elapsed=11.4s; ETA=0.0s
+[U3 exact negative membership] 800442/800442; elapsed=11.5s; ETA=0.0s
+{
+  "status": "PASS",
+  "scope": "Independent raised-body lower/upper replay, combined with previously certified U4 upper and Body5 enclosure; M4 exact formula",
+  "comparisons": {
+    "U4_lt_RM": true,
+    "RM_lt_U3": true,
+    "U3_lt_Body5": true,
+    "Body5_lt_M4": true
+  },
+  "rm_lower_certificate": {
+    "body": "RaisedMeissnerFace",
+    "arithmetic": "exact",
+    "volume_expression": "36415211368949752100591187*sqrt(2)/(192*1048576^4)",
+    "exact_det_sum": "36415211368949752100591187",
+    "above_threshold": true,
+    "threshold": "221869166132387/1000000000000000",
+    "points": 105654,
+    "facets": 708899,
+    "edges": 814553,
+    "planar_edge_stars": 0,
+    "elapsed_seconds": 85.94656849999592
+  },
+  "rm_upper_outward": 0.22259517956843491,
+  "u3_upper_outward": 0.22286811684534777,
+  "u3_lower_display": 0.22262825284060683,
+  "rm_u3_gap_display": 3.3073272171911636e-05,
+  "u3_body5_gap_display": 9.529632382241231e-06,
+  "exact_raised_bounds": {
+    "rm_positive_upper": {
+      "numerator": "819604920912911772488905",
+      "denominator": "4835703278458516698824704"
+    },
+    "rm_negative_upper": {
+      "numerator": "256799318695231164007933",
+      "denominator": "4835703278458516698824704"
+    },
+    "rm_upper": {
+      "numerator": "538202119804071468248419",
+      "denominator": "2417851639229258349412352"
+    },
+    "u3_upper": {
+      "numerator": "2155448166585847858684765",
+      "denominator": "9671406556917033397649408"
+    },
+    "u3_lower": {
+      "numerator": "1301486224170660445770920809769029537745506875065",
+      "denominator": "5846006549323611672814739330865132078623730171904"
+    }
+  },
+  "checker_sha256": "b3aadabd3843c497942341daef8101200807b4a6dfef4b5600b4401a6a91796e",
+  "data_sha256": "2efba7805233b60a27bb46a42eff26642dfaddc9cf7914d951af139fec90b1fa",
+  "elapsed_seconds": 565.5944372000013
+}

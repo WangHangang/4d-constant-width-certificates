@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "date": "2026-10-21",
+  "python_flint": "0.9.0",
+  "scope": "Completed-checkpoint replay: freshly recomputed six 1D Arb integrals and the total; reused returned adaptive I2_04 checkpoint and three imported U4-G intervals. No fresh 2D integration.",
+  "mathematical_fields_identical": [
+    "parameters",
+    "fresh_1d",
+    "i2_04",
+    "imported_other_middle_2d",
+    "total",
+    "rounding_6dp",
+    "rounding_7dp",
+    "script_sha256",
+    "source_sha256"
+  ],
+  "returned_certificate_sha256": "a5b0a863c50de0a262e6596df7098b93e6955a3232f4aa4c743b0b3c0896bd5f",
+  "local_replay_certificate_sha256": "55551d6de119f0eddb6381816aac30dd2d7d33e972a2eea094b7f82e9bc0c1bb",
+  "correctly_rounded_6dp": "0.221836"
+}

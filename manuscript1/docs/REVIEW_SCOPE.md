@@ -1,3 +1,13 @@
+# Current update, 21 October 2026
+
+The new U4-S production certificate and completed checkpoint are now
+available. File/source identities, exact aggregation and rounding passed
+the return audit. A local completed-checkpoint replay recomputed the six 1D
+integrals and final sum successfully; it did not repeat the adaptive 2D grid.
+See [U4_S_RETURN_AUDIT.md](U4_S_RETURN_AUDIT.md). The dated review below
+records the earlier state; its missing-file observation has been superseded
+by the new run, not by recovery of the historical byte-identical JSON.
+
 # Review scope, 16 October 2026
 
 ## Completed

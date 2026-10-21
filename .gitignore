@@ -5,3 +5,7 @@ __pycache__/
 *.out
 .DS_Store
 Thumbs.db
+!manuscript1/results/body5_fresh_replay.log
+!manuscript1/results/raised_comparison_fresh.log
+!manuscript1/certificates/AMO_k5_verify.log
+!manuscript1/certificates/u4_s_20261021/run_*.log

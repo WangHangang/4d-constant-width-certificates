@@ -62,3 +62,11 @@ python u4_human_checkable_checkpoint_arb.py \
 Re-running with `--resume` continues from `certificates/human_checkable_n4096/checkpoint.json`
 if parameters and source-file hashes still match (the script refuses to
 resume otherwise).
+
+## Sharper six-decimal supplement
+
+A newer hybrid production certificate and completed checkpoint are available
+in [the manuscript supplement](../manuscript1/docs/U4_S_RETURN_AUDIT.md).
+They give `0.2218357659033942 < Vol_4(U4^(1)) < 0.2218363538061581`,
+so the volume rounds to **0.221836** at six decimal places. The uniform-grid
+certificate documented above is preserved as its own reproducible method.

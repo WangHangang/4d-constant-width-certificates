@@ -1,0 +1,22 @@
+=== BODY 5 INDEPENDENT VALIDATED CERTIFICATE ===
+python: 3.12.14
+binary64: radix=2 mant_dig=53 rounds=nearest
+script_sha256: 644097e6488a8e8200c1d7b77aa36611e9382400cca56d67bab2775e98ef26e9
+arithmetic: immediate nextafter outward rounding for +,-,*,/;
+sqrt: libm candidate followed by exact-rational endpoint verification;
+atan/pi: explicit alternating Taylor enclosures; pi via Machin formula;
+no mpmath interval arithmetic; no probabilistic input
+face: [0.0021603167708228134, 0.0021608078054053933] width=4.910e-07
+apex_arc: [0.01619767027932573, 0.016197721020872153] width=5.074e-08
+base_arc: [0.0038454349589358938, 0.0038454399433777587] width=4.984e-09
+base_vertex: [0.20194738235753978, 0.20206011753630077] width=1.127e-04
+apex_E: [-0.017104135015065691, -0.017104135013461415] width=1.604e-12
+volume: [0.222877646477737, 0.22299117642698246]
+raised_U3_validated_upper: 0.222868116845342
+strict_lower_gap_exact_positive: YES
+strict_lower_gap_float: 9.52963239500144e-06
+apex_tail1_bound: 2.0456574677892984e-13
+apex_tail2_bound: 7.392541099704535e-13
+base_vertex_chunks: [(0, 16), (16, 32), (32, 48), (48, 64), (64, 80), (80, 96), (96, 112), (112, 128)]
+elapsed_sec: 39.86
+BODY5_VALIDATED_LOWER_CERTIFICATE_SUCCESS

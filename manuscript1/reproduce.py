@@ -4,7 +4,8 @@ from pathlib import Path
 from fractions import Fraction
 from decimal import Decimal, localcontext
 import argparse, datetime, hashlib, importlib.metadata, json, platform
-import subprocess, sys, uuid
+import subprocess, sys, uuid, shutil
+from src.audit_u4_return import audit as audit_u4_return
 
 ROOT = Path(__file__).resolve().parent
 
@@ -77,7 +78,8 @@ def quick():
         "rm_lower_decimal_diagnostic":decimal_rm,
         "raised_comparisons_exact":True,
         "body5_current_endpoint_separation":True,
-        "pending_artifacts":manifest["missing"]
+        "pending_artifacts":manifest["missing"],
+        "u4_s_return":audit_u4_return()
     }
 
 def fresh_directory(mode):
@@ -88,7 +90,13 @@ def fresh_directory(mode):
 
 def replay(mode):
     out=fresh_directory(mode)
-    if mode=="body5":
+    if mode=="u4-resume":
+        audit_u4_return()
+        shutil.copyfile(ROOT/"certificates/u4_s_20261021/u4_i2_04_adaptive_checkpoint.json",
+                        out/"u4_i2_04_adaptive_checkpoint.json")
+        command=[sys.executable,"-u",str(ROOT/"src/u4/u4_certify_6dp_adaptive.py"),
+                 "--base-n","4096","--refine","4","--dps","50","--outdir",str(out),"--resume"]
+    elif mode=="body5":
         command=[sys.executable,"-u",str(ROOT/"src/body5/body5_independent_validated_certificate.py")]
     else:
         command=[sys.executable,"-u",str(ROOT/"src/raised_comparison/certify_comparison.py"),
@@ -109,7 +117,20 @@ def replay(mode):
         code=process.wait()
     require(code==0,f"{mode} checker exited with code {code}; see {out/'replay.log'}")
     logtext=(out/"replay.log").read_text(encoding="utf-8")
-    if mode=="body5":
+    if mode=="u4-resume":
+        require("RIGOROUS 6-DECIMAL CERTIFICATE: SUCCESS" in logtext,"Missing U4-S success token")
+        original=load("certificates/u4_s_20261021/u4_6dp_adaptive_certificate.json")
+        current=json.loads((out/"u4_6dp_adaptive_certificate.json").read_text(encoding="utf-8"))
+        def mathematical(v):
+            if isinstance(v,dict):
+                return {k:mathematical(x) for k,x in v.items() if "elapsed" not in k and "seconds" not in k}
+            if isinstance(v,list):return list(map(mathematical,v))
+            return v
+        for key in ("parameters","fresh_1d","i2_04","imported_other_middle_2d","total",
+                    "rounding_6dp","rounding_7dp","script_sha256","source_sha256"):
+            require(mathematical(current[key])==mathematical(original[key]),"U4-S replay mismatch: "+key)
+        scope="Fresh six 1D integrals and aggregation; supplied completed adaptive checkpoint and three U4-G intervals reused; no fresh 2D integration"
+    elif mode=="body5":
         require("BODY5_VALIDATED_LOWER_CERTIFICATE_SUCCESS" in logtext,"Missing Body5 success token")
         scope="Complete Body5 production integration; original external raised-U3 endpoint is not recomputed"
     else:
@@ -124,7 +145,7 @@ def replay(mode):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("mode",choices=["quick","body5","raised"])
+    parser.add_argument("mode",choices=["quick","body5","raised","u4-resume"])
     args=parser.parse_args()
     result=quick() if args.mode=="quick" else replay(args.mode)
     print(json.dumps(result,indent=2),flush=True)

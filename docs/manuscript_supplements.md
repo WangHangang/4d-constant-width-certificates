@@ -10,8 +10,12 @@ The compact raised-body and Body5 production replays passed on 16 October
 The 21 October packaging check verifies file identities and stored endpoint
 arithmetic; it is not a new production replay. The five-entry volume ordering
 also has an AMO comparison, whose precise evidence level is recorded in
-`manuscript1/CERTIFICATES.md`. The final six-decimal U4 terminal certificate
-has not been recovered; this is not needed for the main strict comparisons.
+`manuscript1/CERTIFICATES.md`. A new full U4-S production run returned on
+21 October supplies the six-decimal certificate and completed checkpoint.
+The local audit checks their identities, endpoint provenance and rounding;
+the local checkpoint replay recomputes six 1D integrals and aggregation.
+Neither local check repeats the adaptive 2D integration. Details and commands
+are in `manuscript1/docs/U4_S_RETURN_AUDIT.md`.
 
 ```text
 python manuscript1/reproduce.py quick

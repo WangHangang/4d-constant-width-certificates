@@ -1,0 +1,9 @@
+{
+  "files": {
+    "environment_20261020_211156_207434.json": "da504a5defae83ce515c317b3f09a528dac1afbfcff0c4fe7b10a72b8efdf843",
+    "run_20261020_211156_207434.log": "4b1bf8b4cd7f8aef0f7965cbaa1b697fe4a334528b8da319f8cdf3e75326205a",
+    "u4_6dp_adaptive_certificate.json": "a5b0a863c50de0a262e6596df7098b93e6955a3232f4aa4c743b0b3c0896bd5f",
+    "u4_i2_04_adaptive_checkpoint.json": "5ccfe5a3c878044d703707aa74464630adb07dcf9ad5ce4e5410b807b2324ebb"
+  },
+  "note": "Collection does not establish mathematical validity; inspect the verifier result and log."
+}

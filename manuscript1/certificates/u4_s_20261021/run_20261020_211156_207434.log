@@ -1,0 +1,194 @@
+=== U4 adaptive rigorous 6-decimal verifier ===
+Python       : 3.14.7
+python-flint : 0.9.0
+platform     : Windows-10-10.0.19045-SP0
+Arb dps      : 50
+base grid    : 4096^2
+refine       : 4^2 on base fallback cells
+script SHA256: 31b6bb3053de1874c6144d835453ecd017902098878cb02f4245acd1544c9b16
+Verified source hashes:
+  u4_certify_5dp_semianalytic.py: c6c7e969c696b69f643e797c953baefb4180b3185bda5ce54b4d19efe3043063
+  u4_validated_interval_arb.py: a28bd08c9b4b5b6934216b5fde3aa28a87c1c3e00f23893033c82a646f5d4c75
+  u4_i2_04_centered_arb.py: 6e098be65efaa67746e0093887ccd49d4f013345c67f2309b56ec3e497906b2b
+
+Checkpoint schema preflight:
+  schema version : 1
+  indexing       : 0-based; next_row is the first unfinished base row in [0, base_n]
+  sentinels      : no sentinel values; all counters are explicit nonnegative integers
+  checkpoint     : C:\Users\Administrator\Downloads\code\U4_Six_Decimal_Certificate_Reproduction\runs\u4_r4\u4_i2_04_adaptive_checkpoint.json
+
+Trust boundary:
+  exact      : ten-piece split + full-A3 theta antiderivative
+  fresh Arb  : six 1D pieces + adaptively refined I2_04
+  prior Arb  : I2_01, I3_01, I3_02 from established 4096^2 certificate
+
+
+=== adaptive rigorous I2_04 refinement ===
+base grid      : 4096 x 4096
+fallback refine: 4 x 4
+fine denominator: 16384
+resume row     : 0
+
+rows    32/4096; base-centered=126779; base-refined=4293; fine-centered=50922; fine-natural=17766; width(partial)=9.492768969e-10; elapsed=0.6 min; rough ETA=80.7 min
+rows    64/4096; base-centered=257530; base-refined=4614; fine-centered=53686; fine-natural=20138; width(partial)=1.320100688e-9; elapsed=1.1 min; rough ETA=69.6 min
+rows    96/4096; base-centered=388203; base-refined=5013; fine-centered=57064; fine-natural=23144; width(partial)=1.749955633e-9; elapsed=1.6 min; rough ETA=65.8 min
+rows   128/4096; base-centered=518810; base-refined=5478; fine-centered=60979; fine-natural=26669; width(partial)=2.244599385e-9; elapsed=2.1 min; rough ETA=63.8 min
+rows   160/4096; base-centered=649359; base-refined=6001; fine-centered=65375; fine-natural=30641; width(partial)=2.809354882e-9; elapsed=2.5 min; rough ETA=62.4 min
+rows   192/4096; base-centered=779863; base-refined=6569; fine-centered=70093; fine-natural=35011; width(partial)=3.449549237e-9; elapsed=3.0 min; rough ETA=61.4 min
+rows   224/4096; base-centered=910317; base-refined=7187; fine-centered=75243; fine-natural=39749; width(partial)=4.169756696e-9; elapsed=3.5 min; rough ETA=60.6 min
+rows   256/4096; base-centered=1040731; base-refined=7845; fine-centered=80689; fine-natural=44831; width(partial)=4.974727976e-9; elapsed=4.0 min; rough ETA=59.8 min
+rows   288/4096; base-centered=1171106; base-refined=8542; fine-centered=86447; fine-natural=50225; width(partial)=5.868737415e-9; elapsed=4.5 min; rough ETA=59.2 min
+rows   320/4096; base-centered=1301441; base-refined=9279; fine-centered=92538; fine-natural=55926; width(partial)=6.856750353e-9; elapsed=5.0 min; rough ETA=58.6 min
+rows   352/4096; base-centered=1431739; base-refined=10053; fine-centered=98930; fine-natural=61918; width(partial)=7.942610398e-9; elapsed=5.5 min; rough ETA=58.0 min
+rows   384/4096; base-centered=1562003; base-refined=10861; fine-centered=105591; fine-natural=68185; width(partial)=9.130711476e-9; elapsed=5.9 min; rough ETA=57.5 min
+rows   416/4096; base-centered=1692234; base-refined=11702; fine-centered=112514; fine-natural=74718; width(partial)=1.042521896e-8; elapsed=6.5 min; rough ETA=57.1 min
+rows   448/4096; base-centered=1822433; base-refined=12575; fine-centered=119690; fine-natural=81510; width(partial)=1.183027796e-8; elapsed=7.0 min; rough ETA=56.7 min
+rows   480/4096; base-centered=1952601; base-refined=13479; fine-centered=127110; fine-natural=88554; width(partial)=1.334994773e-8; elapsed=7.5 min; rough ETA=56.4 min
+rows   512/4096; base-centered=2082739; base-refined=14413; fine-centered=134768; fine-natural=95840; width(partial)=1.498919108e-8; elapsed=8.0 min; rough ETA=56.0 min
+rows   544/4096; base-centered=2212847; base-refined=15377; fine-centered=142669; fine-natural=103363; width(partial)=1.674846251e-8; elapsed=8.5 min; rough ETA=55.7 min
+rows   576/4096; base-centered=2342926; base-refined=16370; fine-centered=150802; fine-natural=111118; width(partial)=1.863267380e-8; elapsed=9.1 min; rough ETA=55.3 min
+rows   608/4096; base-centered=2472974; base-refined=17394; fine-centered=159192; fine-natural=119112; width(partial)=2.064577960e-8; elapsed=9.6 min; rough ETA=54.9 min
+rows   640/4096; base-centered=2602993; base-refined=18447; fine-centered=167823; fine-natural=127329; width(partial)=2.279082353e-8; elapsed=10.1 min; rough ETA=54.4 min
+rows   672/4096; base-centered=2732985; base-refined=19527; fine-centered=176668; fine-natural=135764; width(partial)=2.507093750e-8; elapsed=10.6 min; rough ETA=53.9 min
+rows   704/4096; base-centered=2862950; base-refined=20634; fine-centered=185730; fine-natural=144414; width(partial)=2.748854819e-8; elapsed=11.1 min; rough ETA=53.5 min
+rows   736/4096; base-centered=2992889; base-refined=21767; fine-centered=194978; fine-natural=153294; width(partial)=3.004913614e-8; elapsed=11.6 min; rough ETA=53.0 min
+rows   768/4096; base-centered=3122802; base-refined=22926; fine-centered=204434; fine-natural=162382; width(partial)=3.275242750e-8; elapsed=12.1 min; rough ETA=52.5 min
+rows   800/4096; base-centered=3252690; base-refined=24110; fine-centered=214085; fine-natural=171675; width(partial)=3.560117003e-8; elapsed=12.6 min; rough ETA=52.0 min
+rows   832/4096; base-centered=3382546; base-refined=25326; fine-centered=224021; fine-natural=181195; width(partial)=3.859756246e-8; elapsed=13.1 min; rough ETA=51.6 min
+rows   864/4096; base-centered=3512377; base-refined=26567; fine-centered=234155; fine-natural=190917; width(partial)=4.174474330e-8; elapsed=13.7 min; rough ETA=51.1 min
+rows   896/4096; base-centered=3642183; base-refined=27833; fine-centered=244484; fine-natural=200844; width(partial)=4.504343841e-8; elapsed=14.2 min; rough ETA=50.6 min
+rows   928/4096; base-centered=3771964; base-refined=29124; fine-centered=254993; fine-natural=210991; width(partial)=4.849758053e-8; elapsed=14.7 min; rough ETA=50.2 min
+rows   960/4096; base-centered=3901721; base-refined=30439; fine-centered=265689; fine-natural=221335; width(partial)=5.210851759e-8; elapsed=15.2 min; rough ETA=49.7 min
+rows   992/4096; base-centered=4031449; base-refined=31783; fine-centered=276635; fine-natural=231893; width(partial)=5.587069817e-8; elapsed=15.7 min; rough ETA=49.2 min
+rows  1024/4096; base-centered=4161149; base-refined=33155; fine-centered=287820; fine-natural=242660; width(partial)=5.979059249e-8; elapsed=16.2 min; rough ETA=48.7 min
+rows  1056/4096; base-centered=4290824; base-refined=34552; fine-centered=299207; fine-natural=253625; width(partial)=6.386597994e-8; elapsed=16.8 min; rough ETA=48.3 min
+rows  1088/4096; base-centered=4420475; base-refined=35973; fine-centered=310755; fine-natural=264813; width(partial)=6.810516270e-8; elapsed=17.3 min; rough ETA=47.8 min
+rows  1120/4096; base-centered=4550101; base-refined=37419; fine-centered=322502; fine-natural=276202; width(partial)=7.249933303e-8; elapsed=17.8 min; rough ETA=47.3 min
+rows  1152/4096; base-centered=4679701; base-refined=38891; fine-centered=334461; fine-natural=287795; width(partial)=7.704775534e-8; elapsed=18.3 min; rough ETA=46.9 min
+rows  1184/4096; base-centered=4809270; base-refined=40394; fine-centered=346691; fine-natural=299613; width(partial)=8.175443234e-8; elapsed=18.9 min; rough ETA=46.4 min
+rows  1216/4096; base-centered=4938813; base-refined=41923; fine-centered=359136; fine-natural=311632; width(partial)=8.661446018e-8; elapsed=19.4 min; rough ETA=45.9 min
+rows  1248/4096; base-centered=5068331; base-refined=43477; fine-centered=371769; fine-natural=323863; width(partial)=9.163020560e-8; elapsed=19.9 min; rough ETA=45.5 min
+rows  1280/4096; base-centered=5197823; base-refined=45057; fine-centered=384593; fine-natural=336319; width(partial)=9.680139101e-8; elapsed=20.5 min; rough ETA=45.0 min
+rows  1312/4096; base-centered=5327289; base-refined=46663; fine-centered=397625; fine-natural=348983; width(partial)=1.021223948e-7; elapsed=21.0 min; rough ETA=44.5 min
+rows  1344/4096; base-centered=5456728; base-refined=48296; fine-centered=410878; fine-natural=361858; width(partial)=1.075895983e-7; elapsed=21.5 min; rough ETA=44.1 min
+rows  1376/4096; base-centered=5586136; base-refined=49960; fine-centered=424392; fine-natural=374968; width(partial)=1.132033615e-7; elapsed=22.1 min; rough ETA=43.6 min
+rows  1408/4096; base-centered=5715516; base-refined=51652; fine-centered=438137; fine-natural=388295; width(partial)=1.189602989e-7; elapsed=22.6 min; rough ETA=43.1 min
+rows  1440/4096; base-centered=5844869; base-refined=53371; fine-centered=452095; fine-natural=401841; width(partial)=1.248571862e-7; elapsed=23.1 min; rough ETA=42.7 min
+rows  1472/4096; base-centered=5974194; base-refined=55118; fine-centered=466277; fine-natural=415611; width(partial)=1.308894192e-7; elapsed=23.7 min; rough ETA=42.2 min
+rows  1504/4096; base-centered=6103491; base-refined=56893; fine-centered=480667; fine-natural=429621; width(partial)=1.370576401e-7; elapsed=24.2 min; rough ETA=41.7 min
+rows  1536/4096; base-centered=6232759; base-refined=58697; fine-centered=495291; fine-natural=443861; width(partial)=1.433526685e-7; elapsed=24.7 min; rough ETA=41.2 min
+rows  1568/4096; base-centered=6361998; base-refined=60530; fine-centered=510146; fine-natural=458334; width(partial)=1.497709512e-7; elapsed=25.3 min; rough ETA=40.8 min
+rows  1600/4096; base-centered=6491207; base-refined=62393; fine-centered=525245; fine-natural=473043; width(partial)=1.563059417e-7; elapsed=25.8 min; rough ETA=40.3 min
+rows  1632/4096; base-centered=6620386; base-refined=64286; fine-centered=540583; fine-natural=487993; width(partial)=1.629539430e-7; elapsed=26.4 min; rough ETA=39.8 min
+rows  1664/4096; base-centered=6749534; base-refined=66210; fine-centered=556172; fine-natural=503188; width(partial)=1.697085354e-7; elapsed=26.9 min; rough ETA=39.4 min
+rows  1696/4096; base-centered=6878651; base-refined=68165; fine-centered=572007; fine-natural=518633; width(partial)=1.765668471e-7; elapsed=27.5 min; rough ETA=38.9 min
+rows  1728/4096; base-centered=7007736; base-refined=70152; fine-centered=588101; fine-natural=534331; width(partial)=1.835232349e-7; elapsed=28.0 min; rough ETA=38.4 min
+rows  1760/4096; base-centered=7136789; base-refined=72171; fine-centered=604450; fine-natural=550286; width(partial)=1.905751158e-7; elapsed=28.6 min; rough ETA=37.9 min
+rows  1792/4096; base-centered=7265809; base-refined=74223; fine-centered=621066; fine-natural=566502; width(partial)=1.977151181e-7; elapsed=29.1 min; rough ETA=37.5 min
+rows  1824/4096; base-centered=7394796; base-refined=76308; fine-centered=637945; fine-natural=582983; width(partial)=2.049406127e-7; elapsed=29.7 min; rough ETA=37.0 min
+rows  1856/4096; base-centered=7523749; base-refined=78427; fine-centered=655097; fine-natural=599735; width(partial)=2.122407822e-7; elapsed=30.2 min; rough ETA=36.5 min
+rows  1888/4096; base-centered=7652667; base-refined=80581; fine-centered=672536; fine-natural=616760; width(partial)=2.196075172e-7; elapsed=30.8 min; rough ETA=36.0 min
+rows  1920/4096; base-centered=7781551; base-refined=82769; fine-centered=690242; fine-natural=634062; width(partial)=2.270409112e-7; elapsed=31.4 min; rough ETA=35.6 min
+rows  1952/4096; base-centered=7910399; base-refined=84993; fine-centered=708238; fine-natural=651650; width(partial)=2.345207047e-7; elapsed=31.9 min; rough ETA=35.1 min
+rows  1984/4096; base-centered=8039211; base-refined=87253; fine-centered=726512; fine-natural=669536; width(partial)=2.420460436e-7; elapsed=32.5 min; rough ETA=34.6 min
+rows  2016/4096; base-centered=8167987; base-refined=89549; fine-centered=745071; fine-natural=687713; width(partial)=2.496056391e-7; elapsed=33.1 min; rough ETA=34.1 min
+rows  2048/4096; base-centered=8296724; base-refined=91884; fine-centered=763954; fine-natural=706190; width(partial)=2.571902792e-7; elapsed=33.6 min; rough ETA=33.6 min
+rows  2080/4096; base-centered=8425420; base-refined=94260; fine-centered=783176; fine-natural=724984; width(partial)=2.648069718e-7; elapsed=34.2 min; rough ETA=33.1 min
+rows  2112/4096; base-centered=8554078; base-refined=96674; fine-centered=802702; fine-natural=744082; width(partial)=2.724626961e-7; elapsed=34.8 min; rough ETA=32.7 min
+rows  2144/4096; base-centered=8682697; base-refined=99127; fine-centered=822516; fine-natural=763516; width(partial)=2.801523901e-7; elapsed=35.3 min; rough ETA=32.2 min
+rows  2176/4096; base-centered=8811274; base-refined=101622; fine-centered=842681; fine-natural=783271; width(partial)=2.878612660e-7; elapsed=35.9 min; rough ETA=31.7 min
+rows  2208/4096; base-centered=8939807; base-refined=104161; fine-centered=863211; fine-natural=803365; width(partial)=2.955775036e-7; elapsed=36.5 min; rough ETA=31.2 min
+rows  2240/4096; base-centered=9068300; base-refined=106740; fine-centered=884035; fine-natural=823805; width(partial)=3.032950677e-7; elapsed=37.1 min; rough ETA=30.7 min
+rows  2272/4096; base-centered=9196747; base-refined=109365; fine-centered=905244; fine-natural=844596; width(partial)=3.109992836e-7; elapsed=37.7 min; rough ETA=30.2 min
+rows  2304/4096; base-centered=9325149; base-refined=112035; fine-centered=926812; fine-natural=865748; width(partial)=3.186812242e-7; elapsed=38.2 min; rough ETA=29.7 min
+rows  2336/4096; base-centered=9453506; base-refined=114750; fine-centered=948729; fine-natural=887271; width(partial)=3.263277558e-7; elapsed=38.8 min; rough ETA=29.3 min
+rows  2368/4096; base-centered=9581813; base-refined=117515; fine-centered=971067; fine-natural=909173; width(partial)=3.339247584e-7; elapsed=39.4 min; rough ETA=28.8 min
+rows  2400/4096; base-centered=9710074; base-refined=120326; fine-centered=993751; fine-natural=931465; width(partial)=3.414674104e-7; elapsed=40.0 min; rough ETA=28.3 min
+rows  2432/4096; base-centered=9838283; base-refined=123189; fine-centered=1016867; fine-natural=954157; width(partial)=3.489377808e-7; elapsed=40.6 min; rough ETA=27.8 min
+rows  2464/4096; base-centered=9966441; base-refined=126103; fine-centered=1040392; fine-natural=977256; width(partial)=3.563286877e-7; elapsed=41.2 min; rough ETA=27.3 min
+rows  2496/4096; base-centered=10094548; base-refined=129068; fine-centered=1064316; fine-natural=1000772; width(partial)=3.636269969e-7; elapsed=41.8 min; rough ETA=26.8 min
+rows  2528/4096; base-centered=10222598; base-refined=132090; fine-centered=1088715; fine-natural=1024725; width(partial)=3.708219805e-7; elapsed=42.4 min; rough ETA=26.3 min
+rows  2560/4096; base-centered=10350594; base-refined=135166; fine-centered=1113539; fine-natural=1049117; width(partial)=3.779046799e-7; elapsed=43.0 min; rough ETA=25.8 min
+rows  2592/4096; base-centered=10478534; base-refined=138298; fine-centered=1138800; fine-natural=1073968; width(partial)=3.848648001e-7; elapsed=43.6 min; rough ETA=25.3 min
+rows  2624/4096; base-centered=10606415; base-refined=141489; fine-centered=1164539; fine-natural=1099285; width(partial)=3.916885380e-7; elapsed=44.2 min; rough ETA=24.8 min
+rows  2656/4096; base-centered=10734236; base-refined=144740; fine-centered=1190756; fine-natural=1125084; width(partial)=3.983686323e-7; elapsed=44.8 min; rough ETA=24.3 min
+rows  2688/4096; base-centered=10861994; base-refined=148054; fine-centered=1217482; fine-natural=1151382; width(partial)=4.048941103e-7; elapsed=45.5 min; rough ETA=23.8 min
+rows  2720/4096; base-centered=10989688; base-refined=151432; fine-centered=1244724; fine-natural=1178188; width(partial)=4.112565029e-7; elapsed=46.1 min; rough ETA=23.3 min
+rows  2752/4096; base-centered=11117315; base-refined=154877; fine-centered=1272508; fine-natural=1205524; width(partial)=4.174465268e-7; elapsed=46.7 min; rough ETA=22.8 min
+rows  2784/4096; base-centered=11244874; base-refined=158390; fine-centered=1300836; fine-natural=1233404; width(partial)=4.234567944e-7; elapsed=47.3 min; rough ETA=22.3 min
+rows  2816/4096; base-centered=11372364; base-refined=161972; fine-centered=1329713; fine-natural=1261839; width(partial)=4.292802711e-7; elapsed=47.9 min; rough ETA=21.8 min
+rows  2848/4096; base-centered=11499782; base-refined=165626; fine-centered=1359159; fine-natural=1290857; width(partial)=4.349092022e-7; elapsed=48.6 min; rough ETA=21.3 min
+rows  2880/4096; base-centered=11627124; base-refined=169356; fine-centered=1389226; fine-natural=1320470; width(partial)=4.403378124e-7; elapsed=49.2 min; rough ETA=20.8 min
+rows  2912/4096; base-centered=11754389; base-refined=173163; fine-centered=1419906; fine-natural=1350702; width(partial)=4.455597735e-7; elapsed=49.8 min; rough ETA=20.3 min
+rows  2944/4096; base-centered=11881574; base-refined=177050; fine-centered=1451225; fine-natural=1381575; width(partial)=4.505717499e-7; elapsed=50.5 min; rough ETA=19.8 min
+rows  2976/4096; base-centered=12008676; base-refined=181020; fine-centered=1483210; fine-natural=1413110; width(partial)=4.553677537e-7; elapsed=51.1 min; rough ETA=19.2 min
+rows  3008/4096; base-centered=12135691; base-refined=185077; fine-centered=1515902; fine-natural=1445330; width(partial)=4.599461502e-7; elapsed=51.8 min; rough ETA=18.7 min
+rows  3040/4096; base-centered=12262617; base-refined=189223; fine-centered=1549303; fine-natural=1478265; width(partial)=4.643040477e-7; elapsed=52.4 min; rough ETA=18.2 min
+rows  3072/4096; base-centered=12389451; base-refined=193461; fine-centered=1583439; fine-natural=1511937; width(partial)=4.684407142e-7; elapsed=53.1 min; rough ETA=17.7 min
+rows  3104/4096; base-centered=12516188; base-refined=197796; fine-centered=1618358; fine-natural=1546378; width(partial)=4.723532339e-7; elapsed=53.8 min; rough ETA=17.2 min
+rows  3136/4096; base-centered=12642825; base-refined=202231; fine-centered=1654078; fine-natural=1581618; width(partial)=4.760429865e-7; elapsed=54.4 min; rough ETA=16.7 min
+rows  3168/4096; base-centered=12769357; base-refined=206771; fine-centered=1690641; fine-natural=1617695; width(partial)=4.795113066e-7; elapsed=55.1 min; rough ETA=16.1 min
+rows  3200/4096; base-centered=12895779; base-refined=211421; fine-centered=1728096; fine-natural=1654640; width(partial)=4.827595703e-7; elapsed=55.8 min; rough ETA=15.6 min
+rows  3232/4096; base-centered=13022088; base-refined=216184; fine-centered=1766451; fine-natural=1692493; width(partial)=4.857909448e-7; elapsed=56.5 min; rough ETA=15.1 min
+rows  3264/4096; base-centered=13148278; base-refined=221066; fine-centered=1805757; fine-natural=1731299; width(partial)=4.886089599e-7; elapsed=57.2 min; rough ETA=14.6 min
+rows  3296/4096; base-centered=13274342; base-refined=226074; fine-centered=1846080; fine-natural=1771104; width(partial)=4.912176854e-7; elapsed=57.9 min; rough ETA=14.0 min
+rows  3328/4096; base-centered=13400273; base-refined=231215; fine-centered=1887482; fine-natural=1811958; width(partial)=4.936222187e-7; elapsed=58.6 min; rough ETA=13.5 min
+rows  3360/4096; base-centered=13526066; base-refined=236494; fine-centered=1929986; fine-natural=1853918; width(partial)=4.958286040e-7; elapsed=59.3 min; rough ETA=13.0 min
+rows  3392/4096; base-centered=13651713; base-refined=241919; fine-centered=1973660; fine-natural=1897044; width(partial)=4.978435332e-7; elapsed=60.0 min; rough ETA=12.5 min
+rows  3424/4096; base-centered=13777204; base-refined=247500; fine-centered=2018593; fine-natural=1941407; width(partial)=4.996736353e-7; elapsed=60.7 min; rough ETA=11.9 min
+rows  3456/4096; base-centered=13902532; base-refined=253244; fine-centered=2064821; fine-natural=1987083; width(partial)=5.013271035e-7; elapsed=61.5 min; rough ETA=11.4 min
+rows  3488/4096; base-centered=14027683; base-refined=259165; fine-centered=2112486; fine-natural=2034154; width(partial)=5.028118520e-7; elapsed=62.2 min; rough ETA=10.8 min
+rows  3520/4096; base-centered=14152645; base-refined=265275; fine-centered=2161679; fine-natural=2082721; width(partial)=5.041363600e-7; elapsed=63.0 min; rough ETA=10.3 min
+rows  3552/4096; base-centered=14277406; base-refined=271586; fine-centered=2212483; fine-natural=2132893; width(partial)=5.053101841e-7; elapsed=63.7 min; rough ETA=9.8 min
+rows  3584/4096; base-centered=14401948; base-refined=278116; fine-centered=2265056; fine-natural=2184800; width(partial)=5.063419040e-7; elapsed=64.5 min; rough ETA=9.2 min
+rows  3616/4096; base-centered=14526252; base-refined=284884; fine-centered=2319557; fine-natural=2238587; width(partial)=5.072412906e-7; elapsed=65.3 min; rough ETA=8.7 min
+rows  3648/4096; base-centered=14650297; base-refined=291911; fine-centered=2376151; fine-natural=2294425; width(partial)=5.080180716e-7; elapsed=66.1 min; rough ETA=8.1 min
+rows  3680/4096; base-centered=14774058; base-refined=299222; fine-centered=2435034; fine-natural=2352518; width(partial)=5.086819833e-7; elapsed=66.9 min; rough ETA=7.6 min
+rows  3712/4096; base-centered=14897506; base-refined=306846; fine-centered=2496427; fine-natural=2413109; width(partial)=5.092427798e-7; elapsed=67.7 min; rough ETA=7.0 min
+rows  3744/4096; base-centered=15020599; base-refined=314825; fine-centered=2560704; fine-natural=2476496; width(partial)=5.097100111e-7; elapsed=68.6 min; rough ETA=6.4 min
+rows  3776/4096; base-centered=15143291; base-refined=323205; fine-centered=2628236; fine-natural=2543044; width(partial)=5.100931914e-7; elapsed=69.4 min; rough ETA=5.9 min
+rows  3808/4096; base-centered=15265526; base-refined=332042; fine-centered=2699456; fine-natural=2613216; width(partial)=5.104016161e-7; elapsed=70.3 min; rough ETA=5.3 min
+rows  3840/4096; base-centered=15387225; base-refined=341415; fine-centered=2775036; fine-natural=2687604; width(partial)=5.106443365e-7; elapsed=71.2 min; rough ETA=4.7 min
+rows  3872/4096; base-centered=15508287; base-refined=351425; fine-centered=2855795; fine-natural=2767005; width(partial)=5.108300410e-7; elapsed=72.1 min; rough ETA=4.2 min
+rows  3904/4096; base-centered=15628572; base-refined=362212; fine-centered=2942891; fine-natural=2852501; width(partial)=5.109671522e-7; elapsed=73.1 min; rough ETA=3.6 min
+rows  3936/4096; base-centered=15747874; base-refined=373982; fine-centered=3038038; fine-natural=2945674; width(partial)=5.110637065e-7; elapsed=74.2 min; rough ETA=3.0 min
+rows  3968/4096; base-centered=15865881; base-refined=387047; fine-centered=3143814; fine-natural=3048938; width(partial)=5.111273376e-7; elapsed=75.2 min; rough ETA=2.4 min
+rows  4000/4096; base-centered=15982047; base-refined=401953; fine-centered=3264837; fine-natural=3166411; width(partial)=5.111653238e-7; elapsed=76.4 min; rough ETA=1.8 min
+rows  4032/4096; base-centered=16095291; base-refined=419781; fine-centered=3410350; fine-natural=3306146; width(partial)=5.111845536e-7; elapsed=77.7 min; rough ETA=1.2 min
+rows  4064/4096; base-centered=16202635; base-refined=443509; fine-centered=3606805; fine-natural=3489339; width(partial)=5.111915528e-7; elapsed=79.3 min; rough ETA=0.6 min
+rows  4096/4096; base-centered=16270750; base-refined=506466; fine-centered=4131919; fine-natural=3971537; width(partial)=5.111925184e-7; elapsed=82.8 min; rough ETA=0.0 min
+
+=== completed rigorous I2_04 enclosure ===
+lower = 0.02026164058913275392441316881618925194716387990606689558087445619726005
+upper = 0.02026215178165119996904911808868288660892286546649403500751099107970769
+width = 5.111925184460446359492724936346617589855604271394266365e-7
+counts = {'base_centered': 16270750, 'base_refined': 506466, 'base_derivative_fallbacks': 490086, 'refined_centered': 4131919, 'refined_natural': 3971537, 'refined_derivative_fallbacks': 3906005}
+
+
+=== fresh rigorous 1D pieces ===
+[1/6] I1_01: [0.01228925893 +/- 7.58e-12]; width=9.1236012343155759030e-12; time=0.047s
+[2/6] I1_02: [0.052204557028 +/- 1.82e-13]; width=3.2281441000606907014e-13; time=0.001s
+[3/6] I1_03: [0.03165718157 +/- 4.14e-12]; width=1.1830386608633345139e-12; time=0.003s
+[4/6] I2_02: [0.009814361070 +/- 2.39e-13]; width=1.5782877540395539358e-13; time=0.003s
+[5/6] I2_03: [0.05886172815 +/- 7.24e-12]; width=9.4260169195828011346e-12; time=0.033s
+[6/6] I2_05: [0.02927014521 +/- 1.64e-12]; width=2.4489149823400582079e-12; time=0.015s
+
+=== rigorous adaptive hybrid sum ===
+I1    : [0.0961509975 +/- 3.99e-11]
+I2    : [0.123514 +/- 6.51e-7]
+I3    : [0.0021714 +/- 4.58e-8]
+TOTAL : [0.221836 +/- 3.54e-7]
+width : 5.8790276380449313364806585013866424560546875000000e-7
+
+5 decimals: 0.22184  cell=([0.22183500000000000 +/- 3e-22], [0.22184500000000000 +/- 3e-22])  certified=YES
+6 decimals: 0.221836  cell=([0.221835500000000000 +/- 3e-23], [0.221836500000000000 +/- 3e-23])  certified=YES
+7 decimals: 0.2218361  cell=([0.2218360500000000000 +/- 3e-24], [0.2218361500000000000 +/- 3e-24])  certified=NO
+
+Saved result : C:\Users\Administrator\Downloads\code\U4_Six_Decimal_Certificate_Reproduction\runs\u4_r4\u4_6dp_adaptive_certificate.json
+Result SHA256: a5b0a863c50de0a262e6596df7098b93e6955a3232f4aa4c743b0b3c0896bd5f
+Checkpoint   : C:\Users\Administrator\Downloads\code\U4_Six_Decimal_Certificate_Reproduction\runs\u4_r4\u4_i2_04_adaptive_checkpoint.json
+
+============================================================
+RIGOROUS 6-DECIMAL CERTIFICATE: SUCCESS
+Vol_4(U4^(1)) = 0.221836  (correctly rounded to 6 decimals)
+============================================================
